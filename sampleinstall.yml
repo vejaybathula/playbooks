@@ -1,0 +1,34 @@
+---
+- #hosts: localhost
+#gather_facts: False
+#become: true
+  sudo: no
+ # connection: ssh
+  #remote_user: ubuntu
+  gather_facts: no
+  tasks:
+    - name: 1. apt-module clean
+      shell: apt-get clean
+      become: true
+      become_user: root
+
+    - name: 2. apt-module update
+      shell: apt-get update
+      become: true
+      become_user: root
+
+#    - name: 3. apt-module upgrade
+#      shell: apt-get upgrade
+#      become: true
+#      become_user: root
+
+    - name: 4. install Apache
+      apt: name=apache2 state=latest install_recommends=yes
+      sudo: true
+
+    - name: 5. update repository
+      shell: add-apt-repository ppa:ondrej/php
+      become: true
+      become_user: root
+
+

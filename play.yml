@@ -1,0 +1,10 @@
+- hosts: all
+  become: yes
+  tasks:
+   - name: install software
+     yum:
+      name: elinks
+      state: latest
+   - name: install more software
+     yum:
+     state: latest

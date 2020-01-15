@@ -1,4 +1,4 @@
--- # play example
+---
 - hosts: all
   become: yes
   tasks:

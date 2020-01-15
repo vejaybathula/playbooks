@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  user: admin123
+  # sudo: yes
   tasks:
     - name: Transfer the script
       copy: src=/home/admin123/ansible/Playbooks/* dest=/home/server1-123

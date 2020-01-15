@@ -1,6 +1,7 @@
 ---
 - hosts: all
-  #remote_user: root
+  user: admin123
+  # sudo: yes
   become: yes
   tasks:
     - name: install software

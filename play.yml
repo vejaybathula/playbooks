@@ -1,8 +1,8 @@
 ---
 - hosts: all
   tasks:
-    - name: install more software
-      yum:
-        name: Notepad++
-        state: latest
+    - name: Transfer the script
+      copy: src=/home/admin123/ansible/Playbooks/* dest=/home/server1-123
+
+
 

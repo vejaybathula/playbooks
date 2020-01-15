@@ -1,8 +1,5 @@
 ---
 - hosts: all
-  user: server1-123
-  # sudo: yes
-  become: yes
   tasks:
     - name: install software
       yum:

@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  user: admin123
+  user: server1-123
   # sudo: yes
   become: yes
   tasks:

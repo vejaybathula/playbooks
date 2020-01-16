@@ -1,7 +1,7 @@
 ---
 - hosts: all
   connection: ssh
-  #remote_user: server1-123
+  remote_user: server1-123
   gather_facts: no
   tasks:
     - name: Transfer the script

@@ -1,7 +1,9 @@
 ---
 - hosts: all
   connection: ssh
-  user: sudo
+  gather_facts: no
   tasks:
-    - name: install apache2
-      shell: free -m
+    - name: Upgrade all packages to the latest version
+      yum:
+        name: "*"
+        state: latest

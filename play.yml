@@ -1,5 +1,8 @@
 ---
 - hosts: all
+  connection: ssh
+  remote_user: server1-123
+  gather_facts: no
   tasks:
     - name: Transfer the script
       copy: src=/home/admin123/ansible/Playbooks/* dest=/home/server1-123

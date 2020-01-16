@@ -6,6 +6,8 @@
   tasks:
     - name: Transfer the script
       copy: src=/home/admin123/ansible/Playbooks/test.txt dest=/home/server1-123/test.txt
+      become_user: admin123
+      
 
 
 

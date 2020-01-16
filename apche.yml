@@ -7,3 +7,8 @@
       yum:
         name: "*"
         state: latest
+   -  name: Download the nginx package but do not install it
+      yum:
+        name: git
+        state: latest
+        download_only: true

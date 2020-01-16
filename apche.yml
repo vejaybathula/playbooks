@@ -7,7 +7,7 @@
       yum:
         name: "*"
         state: latest
-   -  name: install git 
+    - name: install git 
       yum:
         name: git
         state: latest

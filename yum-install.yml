@@ -3,12 +3,6 @@
   connection: ssh
   gather_facts: no
   tasks:
-    - name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
-      file:
-       path: /etc/foo.conf
-       state: touch
-       mode: u=rw,g=r,o=r
-
     - name: Upgrade all packages to the latest version
       yum:
        name: "*"

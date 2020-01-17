@@ -2,7 +2,7 @@
 - hosts: all
  # become: true
   connection: ssh
-  gather_facts: no
+  gather_facts: yes
   tasks:
     - name: Upgrade all packages to the latest version
       yum:

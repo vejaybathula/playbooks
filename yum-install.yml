@@ -4,6 +4,8 @@
   connection: ssh
   gather_facts: yes
   tasks:
+     - name: user name
+       shell: whoami
    # - name: Upgrade all packages to the latest version
    #   yum:
    #    name: "*"

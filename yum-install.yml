@@ -1,6 +1,7 @@
 ---
 - hosts: all
  # become: true
+  become_user: ec2-user
   connection: ssh
   gather_facts: no
   tasks:

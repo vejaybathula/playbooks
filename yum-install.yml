@@ -6,6 +6,10 @@
   tasks:
     - name: user name
       shell: whoami
+      register : a
+     
+    - debug:
+        msg: a
    # - name: Upgrade all packages to the latest version
    #   yum:
    #    name: "*"

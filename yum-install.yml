@@ -9,7 +9,7 @@
       register : a
      
     - debug:
-        value: a
+        var: a
    # - name: Upgrade all packages to the latest version
    #   yum:
    #    name: "*"

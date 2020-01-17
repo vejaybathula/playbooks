@@ -4,16 +4,10 @@
   connection: ssh
   gather_facts: yes
   tasks:
-    - name: user name
-      shell: whoami
-      register : a
-     
-    - debug:
-        var: a
-   # - name: Upgrade all packages to the latest version
-   #   yum:
-   #    name: "*"
-   #    state: latest
+    - name: Upgrade all packages to the latest version
+      yum:
+       name: "*"
+       state: latest
        
     - name: install the latest version of Apache
       yum:

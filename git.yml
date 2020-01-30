@@ -1,6 +1,7 @@
 ---
 - name: Install Git
   hosts: all
+  sudo 
   gather_facts: false
   become: true
   vars:

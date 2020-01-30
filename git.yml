@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 35.175.204.31
   sudo: yes
   sudo_user: cloud_user
   become: true

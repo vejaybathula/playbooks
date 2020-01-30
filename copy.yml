@@ -1,6 +1,7 @@
 ---
 - hosts: all
   connection: ssh
+  sudo: yes
   #become_user: admin123
   gather_facts: no
   tasks:

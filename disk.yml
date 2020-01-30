@@ -1,13 +1,11 @@
  ---
- - hosts: 52.90.48.71
-  # user: cpnntlcl
-  #  sudo: yes
+ - hosts: all
    tasks:
    - name: Transfer the script
       copy: src=/home/admin123/test dest=/home/admin123 mode=0777
 
   - name: Execute the script
-     command: sh df -h
-     register: command_output
+     command: df -h
+   
 
    

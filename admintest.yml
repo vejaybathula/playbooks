@@ -1,0 +1,7 @@
+- name: Copy file with owner and permissions
+  copy:
+    src: /home/admin123/test
+    dest: /home/admin123/test
+    owner: admin123
+    group: admin123
+    mode: '0644

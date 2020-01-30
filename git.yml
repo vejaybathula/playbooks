@@ -1,6 +1,7 @@
 ---
 - name: Install Git
   hosts: all
+  sudo: yes
   become: true
   vars:
     version: 2.9.5

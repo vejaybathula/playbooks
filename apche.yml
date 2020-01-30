@@ -3,9 +3,9 @@
   connection: ssh
   gather_facts: no
   tasks:
-     - name: update packages
+     - name: Install Git
        yum:
-         name: "*"
+         name: git
          state: latest
         
 

@@ -1,8 +1,6 @@
 ---
 - name: Install Git
   hosts: all
-  sudo 
-  gather_facts: false
   become: true
   vars:
     version: 2.9.5

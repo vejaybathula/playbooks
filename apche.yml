@@ -3,10 +3,7 @@
   connection: ssh
   gather_facts: no
   tasks:
-   - name: Transfer the script
-      copy: src=/home/admin123/test dest=/home/admin123 mode=0777
-
-  - name: Execute the script
+   - name: Execute the script
      command: df -h
         
 

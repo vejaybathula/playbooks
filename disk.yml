@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+   - name: Transfer and execute a script
+       command:  df -h
+       register: command_output 
+   

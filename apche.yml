@@ -2,10 +2,6 @@
 - hosts: all
   connection: ssh
   gather_facts: no
-  tasks:
-     - name: Install Git
-       yum:
-         name: git
-         state: latest
+  ssh: df -h
         
 

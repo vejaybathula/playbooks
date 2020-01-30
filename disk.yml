@@ -2,6 +2,6 @@
 - hosts: all
   tasks:
    - name: Transfer and execute a script
-     shell: cat /etc/motd
+     shell: df -h
  
    

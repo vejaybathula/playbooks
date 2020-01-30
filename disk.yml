@@ -2,6 +2,6 @@
 - hosts: all
   tasks:
    - name: Transfer and execute a script
-     command: cat /etc/motd
-     register: command_output 
+     shell: cat /etc/motd
+ 
    

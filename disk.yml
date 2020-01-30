@@ -1,5 +1,5 @@
  ---
- - hosts: all
+ - hosts: 52.90.48.71
   # user: cpnntlcl
   #  sudo: yes
    tasks:

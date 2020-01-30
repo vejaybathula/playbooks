@@ -1,0 +1,14 @@
+
+#- name: CopyFile
+- hosts: 52.90.48.71
+  user: admin123
+  #  sudo: yes
+  tasks:
+  - name: Copy the text
+    copy: src=/home/admin123/test.txt dest=/var/tmp mode=0755
+
+  - name: Execute the script
+    command: sh /var/tmp/test.txt
+    register: command_output
+
+  - debug: msg="{{command_output.stdout_lines}}"

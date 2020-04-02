@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  roles:
+    - { role: azure.azure_preview_modules }
+  connection: local
+  tasks:
+    - name: Look up secret when ansible host is general VM
+      vars:
+        url: 'https://vijaykeyvault123.vault.azure.net'
+        secretname: 'demokey/a1dbe6dd0bea41308c3b2ac5b59aebb3'
+        client_id: 'caf8ecc1-c226-4736-956f-dcc3d0a0d00e'
+        secret: '.waswv23K[6s9kpDb/eIAS/6PL8oBQcJ'
+        tenant: 'ced2126f-f2cd-41e3-8634-e595d8134124'
+
+      debug: msg="the value of this secret is {{lookup('azure_keyvault_secret',secretname,vault_url=url, cliend_id=client_id, secret=secret, tenant_id=tenant)}}"
